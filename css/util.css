@@ -1,3 +1,31 @@
+
+.container {
+    max-width: 1180px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+
+.lead {
+    font-size: 1.3rem;
+}
+
+.section {
+    padding: 2rem 0;
+}
+
+.mb {
+    margin-bottom: 1rem;
+}
+
+.mt {
+    margin-top: 1rem;
+}
+
+.bg-light {
+    background: var(--light-color);
+}
+
 @media screen and (max-width: 580px) {
     .hide-on-small {
       display: none;

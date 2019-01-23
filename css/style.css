@@ -1,10 +1,82 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
+@import url('variables.css');
 @import url('nav.css');
 @import url('util.css');
 
 body {
     font-family: 'PT Sans', sans-serif;
-    background-color: #eee;
+    background-color: white;
     margin: 0;
     line-height: 1.6;
-  }
+}
+
+.section-head {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.section h3 {
+    font-size: 1.5rem;
+}
+
+.blog-posts {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: left;
+}
+
+.blog-posts img {
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+}
+
+
+/* Me section */
+#me {
+    margin: 0;
+    padding: 0;
+    background: url('../img/pexels-photo-1036808.jpeg') no-repeat center/cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow-y: hidden;
+}
+
+#me .container {
+    margin-top: 40vh;
+}
+
+#me h1 {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+#me h2 {
+    font-size: 2rem;
+}
+
+
+@media screen and (max-width: 580px) {
+
+    #me {
+        height: 50vh;
+    }
+
+    #me .container {
+        margin-top: 20vh;
+    }
+
+    #me h1 {
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
+
+    #me h2 {
+        font-size: 1.2rem;
+    }
+
+
+
+}
